@@ -1,0 +1,41 @@
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #eafaf1;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(90deg, #3cb371 60%, #a9dfbf 100%);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #145a32;
+}
+
+main {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+footer {
+  background: #a9dfbf;
+  color: #145a32;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
