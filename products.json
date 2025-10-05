@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Falcataria moluccana",
+    "image": "/public/images/falcataria.jpg",
+    "price": 100000,
+    "stock": 150,
+    "description": "Pohon cepat tumbuh, cocok untuk reboisasi."
+  },
+  {
+    "id": 2,
+    "name": "Gmelina arborea",
+    "image": "/public/images/gmelina.jpg",
+    "price": 100000,
+    "stock": 150,
+    "description": "Kayu serbaguna pertumbuhan pesat."
+  },
+  {
+    "id": 3,
+    "name": "Shorea leprosula",
+    "image": "/public/images/shorea.jpg",
+    "price": 100000,
+    "stock": 150,
+    "description": "Bibit asli hutan hujan tropis, kayu kuat."
+  },
+  {
+    "id": 4,
+    "name": "Swietenia macrophylla",
+    "image": "/public/images/swietenia.jpg",
+    "price": 100000,
+    "stock": 150,
+    "description": "Penghasil kayu mahoni berkualitas tinggi."
+  }
+]
