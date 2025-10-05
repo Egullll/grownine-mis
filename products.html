@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Produk Bibit - GrowNine</title>
+  <link rel="stylesheet" href="../src/styles/main.css">
+  <style>
+    .produk-grid { display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; }
+    .produk-card {
+      background: #fff; border-radius: 18px; box-shadow: 0 2px 6px #d0f5e6;
+      width: 280px; padding: 20px; text-align: left; margin-bottom: 30px;
+      transition: transform .12s;
+    }
+    .produk-card:hover { transform: translateY(-6px) scale(1.03);}
+    .produk-card img { width: 100%; border-radius: 14px;}
+    .produk-card h3 { margin: 14px 0 8px 0;}
+    .produk-card button {
+      background: #3cb371; color: #fff; border: none;
+      padding: 8px 20px; border-radius: 8px; cursor: pointer; font-size: 1em;
+      margin-top: 10px; transition: background .2s;
+    }
+    .produk-card button:hover { background: #228b22;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌱 GrowNine</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">Tentang Kami</a>
+      <a href="produk.html">Produk</a>
+      <a href="kemitraan.html">Kemitraan</a>
+      <a href="keranjang.html">Keranjang</a>
+      <a href="admin.html">Login Pegawai</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Daftar Bibit Hutan</h2>
+    <div class="produk-grid">
+      <!-- Falcataria -->
+      <div class="produk-card">
+        <img src="images/falcataria.jpg" alt="Falcataria moluccana">
+        <h3>Falcataria moluccana</h3>
+        <div><b>Rp. 100.000</b> &nbsp; <span style="color:#16a085;">Stok: 150</span></div>
+        <p>Pohon cepat tumbuh, cocok untuk reboisasi.</p>
+        <button onclick="alert('Masuk ke keranjang!')">Tambah ke Keranjang</button>
+      </div>
+      <!-- Gmelina -->
+      <div class="produk-card">
+        <img src="images/gmelina.jpg" alt="Gmelina arborea">
+        <h3>Gmelina arborea</h3>
+        <div><b>Rp. 100.000</b> &nbsp; <span style="color:#16a085;">Stok: 150</span></div>
+        <p>Kayu serbaguna pertumbuhan pesat.</p>
+        <button onclick="alert('Masuk ke keranjang!')">Tambah ke Keranjang</button>
+      </div>
+      <!-- Shorea -->
+      <div class="produk-card">
+        <img src="images/shorea.jpg" alt="Shorea leprosula">
+        <h3>Shorea leprosula</h3>
+        <div><b>Rp. 100.000</b> &nbsp; <span style="color:#16a085;">Stok: 150</span></div>
+        <p>Bibit asli hutan hujan tropis, kayu kuat.</p>
+        <button onclick="alert('Masuk ke keranjang!')">Tambah ke Keranjang</button>
+      </div>
+      <!-- Swietenia -->
+      <div class="produk-card">
+        <img src="images/swietenia.jpg" alt="Swietenia macrophylla">
+        <h3>Swietenia macrophylla</h3>
+        <div><b>Rp. 100.000</b> &nbsp; <span style="color:#16a085;">Stok: 150</span></div>
+        <p>Penghasil kayu mahoni berkualitas tinggi.</p>
+        <button onclick="alert('Masuk ke keranjang!')">Tambah ke Keranjang</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>Lokasi: Belakang Labtek VA Kampus ITB Jatinangor | Telp: 085273855379</p>
+  </footer>
+</body>
+</html>
