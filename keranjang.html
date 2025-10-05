@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Keranjang - GrowNine</title>
+  <link rel="stylesheet" href="../src/styles/main.css">
+  <style>
+    .cart-form {
+      max-width: 380px; margin: 30px auto; background: #fff; border-radius: 14px; padding: 24px; box-shadow:0 2px 8px #c8f7df;
+    }
+    input, textarea {
+      width: 100%; margin-bottom: 12px; padding: 8px; border-radius: 6px; border: 1px solid #b2dfdb; font-size: 1em;
+    }
+    button {
+      background: #3cb371; color: #fff; border:none; border-radius:8px; padding:10px 22px; font-size:1em; cursor:pointer;
+      transition: background 0.2s;
+    }
+    button:hover { background: #228b22;}
+    .cart-summary {margin-bottom:16px;}
+  </style>
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('cart-content').style.display = 'none';
+      document.getElementById('order-status').style.display = 'block';
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>🌱 GrowNine</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">Tentang Kami</a>
+      <a href="produk.html">Produk</a>
+      <a href="kemitraan.html">Kemitraan</a>
+      <a href="keranjang.html">Keranjang</a>
+      <a href="admin.html">Login Pegawai</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Keranjang & Checkout</h2>
+    <div id="cart-content">
+      <div class="cart-summary">
+        <b>Pesanan Anda:</b>
+        <ul>
+          <li>Falcataria moluccana x 1 (@Rp100.000)</li>
+          <li>Gmelina arborea x 1 (@Rp100.000)</li>
+        </ul>
+        <b>Total: Rp200.000</b>
+      </div>
+      <form class="cart-form" onsubmit="handleSubmit(event)">
+        <label>Nama:</label>
+        <input type="text" required>
+        <label>Alamat:</label>
+        <textarea rows="2" required></textarea>
+        <label>No Telepon:</label>
+        <input type="tel" required>
+        <button type="submit">Pesan Sekarang</button>
+      </form>
+    </div>
+    <div id="order-status" style="display:none;text-align:center;padding:30px 10px;">
+      <h3>Pesanan anda sedang disiapkan!</h3>
+      <p>Terima kasih telah memesan di GrowNine.</p>
+    </div>
+  </main>
+  <footer>
+    <p>Lokasi: Belakang Labtek VA Kampus ITB Jatinangor | Telp: 085273855379</p>
+  </footer>
+</body>
+</html>
