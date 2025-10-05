@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Pegawai - GrowNine</title>
+  <link rel="stylesheet" href="../src/styles/main.css">
+  <style>
+    .login-box { max-width:350px; margin:40px auto; background:#fff; border-radius:14px; padding:32px; box-shadow:0 2px 8px #c8f7df;}
+    input { width:100%; margin-bottom:12px; padding:8px; border-radius:6px; border:1px solid #b2dfdb; font-size:1em;}
+    button { background:#3cb371; color:#fff; border:none; border-radius:8px; padding:10px 22px; font-size:1em; cursor:pointer; transition:background 0.2s;}
+    button:hover { background:#228b22;}
+    .admin-panel { max-width:800px; margin:40px auto; background:#fff; border-radius:14px; padding:28px; box-shadow:0 2px 8px #c8f7df;}
+    .admin-panel h3 { margin-top:28px;}
+    .admin-panel input[type='number'] {width:60px;}
+    .admin-panel table {width:100%; border-collapse:collapse;}
+    .admin-panel th, .admin-panel td {padding:6px 10px; border:1px solid #a9dfbf;}
+    .admin-panel td input {margin:0;}
+  </style>
+  <script>
+    function loginAdmin(e) {
+      e.preventDefault();
+      var u = document.getElementById('user').value;
+      var p = document.getElementById('pass').value;
+      if (u === "user123" && p === "12345678") {
+        document.getElementById('loginbox').style.display = 'none';
+        document.getElementById('adminpanel').style.display = 'block';
+      } else {
+        alert('Username atau password salah!');
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>🌱 GrowNine</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">Tentang Kami</a>
+      <a href="produk.html">Produk</a>
+      <a href="kemitraan.html">Kemitraan</a>
+      <a href="keranjang.html">Keranjang</a>
+      <a href="admin.html">Login Pegawai</a>
+    </nav>
+  </header>
+  <main>
+    <div id="loginbox" class="login-box">
+      <h2>Login Pegawai</h2>
+      <form onsubmit="loginAdmin(event)">
+        <label>Username</label>
+        <input type="text" id="user" required>
+        <label>Password</label>
+        <input type="password" id="pass" required>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+    <div id="adminpanel" class="admin-panel" style="display:none;">
+      <h2>Dashboard Pegawai</h2>
+      <h3>Edit Stok Bibit</h3>
+      <table>
+        <tr><th>Spesies</th><th>Stok Saat Ini</th><th>Edit Stok</th></tr>
+        <tr><td>Falcataria moluccana</td><td>150</td><td><input type="number" value="150"></td></tr>
+        <tr><td>Gmelina arborea</td><td>150</td><td><input type="number" value="150"></td></tr>
+        <tr><td>Shorea leprosula</td><td>150</td><td><input type="number" value="150"></td></tr>
+        <tr><td>Swietenia macrophylla</td><td>150</td><td><input type="number" value="150"></td></tr>
+      </table>
+      <h3>Edit Harga Bibit</h3>
+      <table>
+        <tr><th>Spesies</th><th>Harga Saat Ini</th><th>Edit Harga</th></tr>
+        <tr><td>Falcataria moluccana</td><td>100000</td><td><input type="number" value="100000"></td></tr>
+        <tr><td>Gmelina arborea</td><td>100000</td><td><input type="number" value="100000"></td></tr>
+        <tr><td>Shorea leprosula</td><td>100000</td><td><input type="number" value="100000"></td></tr>
+        <tr><td>Swietenia macrophylla</td><td>100000</td><td><input type="number" value="100000"></td></tr>
+      </table>
+      <h3>Jadwal Maintenance</h3>
+      <ul>
+        <li>Penyiraman: Setiap hari</li>
+        <li>Pemupukan: Seminggu sekali</li>
+        <li>Pengecekan bibit: Setiap hari</li>
+      </ul>
+      <h3>Quality Control Bibit</h3>
+      <table>
+        <tr><th>Spesies</th><th>Disiram (kali/hari)</th><th>Bibit Hidup</th><th>Bibit Mati</th></tr>
+        <tr><td>Falcataria moluccana</td><td>2</td><td><input type="number" value="140"></td><td><input type="number" value="10"></td></tr>
+        <tr><td>Gmelina arborea</td><td>1</td><td><input type="number" value="145"></td><td><input type="number" value="5"></td></tr>
+        <tr><td>Shorea leprosula</td><td>2</td><td><input type="number" value="148"></td><td><input type="number" value="2"></td></tr>
+        <tr><td>Swietenia macrophylla</td><td>1</td><td><input type="number" value="150"></td><td><input type="number" value="0"></td></tr>
+      </table>
+      <h3>Edit Distribusi Bibit</h3>
+      <table>
+        <tr><th>Tahap</th><th>Jumlah</th></tr>
+        <tr><td>Perkecambahan</td><td><input type="number" value="80"></td></tr>
+        <tr><td>Aktimalisasi</td><td><input type="number" value="40"></td></tr>
+        <tr><td>Siap Dijual</td><td><input type="number" value="30"></td></tr>
+      </table>
+    </div>
+  </main>
+  <footer>
+    <p>Lokasi: Belakang Labtek VA Kampus ITB Jatinangor | Telp: 085273855379</p>
+  </footer>
+</body>
+</html>
