@@ -1,0 +1,14 @@
+[
+  {
+    "task": "Penyiraman",
+    "frequency": "Setiap hari"
+  },
+  {
+    "task": "Pemupukan",
+    "frequency": "Seminggu sekali"
+  },
+  {
+    "task": "Pengecekan bibit",
+    "frequency": "Setiap hari"
+  }
+]
