@@ -1,0 +1,22 @@
+[
+  {
+    "species": "Falcataria moluccana",
+    "watering_per_day": 2,
+    "check_list": ["Daun sehat", "Akar tidak busuk"]
+  },
+  {
+    "species": "Gmelina arborea",
+    "watering_per_day": 1,
+    "check_list": ["Batang tegak", "Daun hijau"]
+  },
+  {
+    "species": "Shorea leprosula",
+    "watering_per_day": 2,
+    "check_list": ["Daun tidak menguning", "Media lembab"]
+  },
+  {
+    "species": "Swietenia macrophylla",
+    "watering_per_day": 1,
+    "check_list": ["Daun tidak berlubang", "Bibit berdiri kokoh"]
+  }
+]
